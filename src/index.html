@@ -1,27 +1,37 @@
 <!DOCTYPE html>
-
 <html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.css"><!-- do not remove this line! -->
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <title>Economía Circular</title>
   </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
+  <body class="mx-[10vw] my-[1vw] font-sans">
+    <include src="./views/header.html"></include>
+    <main class="my-8 text-center grid justify-items-center lg:grid-cols-[1fr_1fr_2fr] lg:grid-rows-[40vh_60vh] lg:p-0">
+      <div class="md:col-start-3 md:row-start-1 md:self-center">
+        <h1 class="text-fluid-h1 leading-[1.2] font-semibold pl-2">Jornadas sobre Economia Circular</h1>
+      </div>
+      <div class="w-full max-w-screen-md md:col-span-2 md:row-span-2">
+        
+        <img class="w-full h-full object-cover" srcset="./assets/images/ECO_small2.jpg 288w, ./assets/images/ECO_small.jpg 384w, ./assets/images/ECO.jpg 512w" sizes="(min-width: 992px) 512px, (min-width: 600px) 384px, (max-width: 599px) 288px, 512px" src="./assets/images/ECO.jpg" loading="lazy" alt="Economia Circular">
+      </div>
+      <div class="mt-6 space-y-2 md:col-start-3 md:row-start-2">
+        
+            <p>Debates y mesas redondas</p>
+            <p>Talleres prácticos</p>
+            <p>Mesa redonda con jóvenes o estudiantes</p>
+        
+        
+          <p>Casos de éxito</li>
+          <p>Espacio de networking</li>
+          <p>Dinámicas participativas</li>
+      
+      </div>
+    </main>
+    
     <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+    
   </body>
 </html>

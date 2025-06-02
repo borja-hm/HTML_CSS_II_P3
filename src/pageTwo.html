@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Economía Circular/Speakers</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.css">
+  </head>
+  <body class="font-sans mx-[10vw] my-[1vw] box-border">
+    <include src="./views/header.html"></include>
+
+    <main class="my-8 text-center grid justify-items-center">
+      <div class="p2-titol flex justify-center">
+        <h1 class="text-[calc(1.4rem+1.8vw)] font-medium leading-[1.2]">
+          Oradores presentes en las Jornadas
+        </h1>
+      </div>
+
+      <div class="flex flex-wrap justify-center gap-5 p-5">
+        
+        <!-- Orador 1 -->
+        <include src="views/card.html">
+        {
+        "image": "./assets/images/Vaiana.avif",
+        "nombre": "Vaiana",
+        "titulo": "Fundamentos de la economía circular",
+        "titulo2": "¿Qué es y en qué se diferencia de la economía lineal?",
+        "titulo3": "Principios clave: reducir, reutilizar, reciclar, rediseñar, reparar, repensar.",
+        "titulo4": "Ciclo técnico vs ciclo biológico"
+        }
+        </include>
+
+        <!-- Orador 2 -->
+        <include src="views/card.html">
+        {
+        "image": "./assets/images/Woody.avif",
+        "nombre": "Woody",
+        "titulo": "Diseño circular de productos y servicios",
+        "titulo2": "Ecodiseño: pensar en el ciclo de vida desde el inicio.",
+        "titulo3": "Modularidad, durabilidad y reparabilidad.",
+        "titulo4": "Innovación en envases, moda sostenible, electrónica circular."
+        }
+        </include>
+
+        <!-- Orador 3 -->
+        <include src="views/card.html">
+        {
+        "image": "./assets/images/goofy.avif",
+        "nombre": "Goofy",
+        "titulo": "Modelos de negocio circulares",
+        "titulo2": "Ejemplos: producto como servicio, reutilización, economía colaborativa",
+        "titulo3": "Casos reales de empresas que han aplicado estos modelos con éxito.",
+        "titulo4": ""
+        }
+        </include>
+
+        <!-- Orador 4 -->
+        <include src="views/card.html">
+        {
+        "image": "./assets/images/RayoMcqueen.avif",
+        "nombre": "Rayo McQueen",
+        "titulo": "Gestión de residuos y recursos",
+        "titulo2": "Cómo convertir residuos en recurso.",
+        "titulo3": "Retos en el reciclaje: separación, logística, costes, contaminación.",
+        "titulo4": "Estrategias de cero residuos."
+        }
+        </include>
+
+        <!-- Orador 5 -->
+        <include src="views/card.html">
+        {
+        "image": "./assets/images/darthvader.avif",
+        "nombre": "Darth Vader",
+        "titulo": "Políticas públicas y marcos legales",
+        "titulo2": "Directivas y leyes clave (ej. Pacto Verde Europeo, Estrategia Española de Economía Circular).",
+        "titulo3": "Incentivos, normativas y planes de acción gubernamentales.",
+        "titulo4": "Papel de los municipios y gobiernos locales."
+        }
+        </include>
+
+        <!-- Orador 6 -->
+        <include src="views/card.html">
+        {
+        "image": "./assets/images/DonaldDuck.avif",
+        "nombre": "Donald Duck",
+        "titulo": "Educación, ciudadanía y cambio cultural",
+        "titulo2": "Cómo sensibilizar a la población y fomentar hábitos circulares.",
+        "titulo3": "Iniciativas desde escuelas, universidades y comunidades.",
+        "titulo4": "El rol del consumidor en la economía circular."
+        }
+        </include>
+
+      </div>
+    </main>
+
+    <include src="./views/footer.html"></include>
+  </body>
+</html>

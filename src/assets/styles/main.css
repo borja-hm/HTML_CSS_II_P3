@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-fluid-h1 {
+    font-size: calc(1.1rem + 1.8vw);
+  }
+  .tarjeta {
+    @apply bg-gray-50 rounded-xl p-4 w-[300px] shadow-md flex flex-col items-center text-center;
+  }
+  .navegador {
+    @apply pl-[3vw] pr-[1vw];
+  }
+  .enlace {
+    @apply hover:text-[rgb(202,235,14)];
+  }
+}
+html {
+  font-size: 1.5rem;
+}
